@@ -12,7 +12,7 @@ const resolver = {
     return users
   },
   getUser: ({id}) => {
-    return users.find(user => user.id === id)
+    return users.find(user => user.id === Number(id))
   },
   createUser: ({input}) => {
     const id = Date.now()
